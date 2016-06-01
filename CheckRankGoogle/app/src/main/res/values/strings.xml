@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">Check Rank</string>
+    <string name="title_activity_add_web">Add Website</string>
+    <string name="title_activity_check_rank">Check Rank</string>
+    <string name="checkRank">Check Now</string>
+    <string name="putourwebsite">Enter your website here</string>
+    <string name="hintWeb">www.translateviet.com</string>
+    <string name="save">Add</string>
+    <string name="missing_input">Missing Query Text</string>
+    <string name="donate">Donate for better</string>
+    <string name="missing_data">Maximum query per day or can not connect Google</string>
+    <string name="yourrank">Your rank is</string>
+    <string name="progress_dialog">Get Rank</string>
+    <string name="please_wait">Please Waiting</string>
+</resources>

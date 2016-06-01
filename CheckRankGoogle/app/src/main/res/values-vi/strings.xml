@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Kiểm Tra Thứ Hạng</string>
+    <string name="checkRank">Kiểm Tra</string>
+    <string name="donate">Ủng hộ để tốt hơn</string>
+    <string name="hintWeb">www.translateviet.com</string>
+    <string name="missing_data">Quá giới hạn tìm kiếm trên Google mỗi ngày</string>
+    <string name="missing_input">Thiếu Từ Khóa</string>
+    <string name="putourwebsite">Nhập website tại đây</string>
+    <string name="save">Thêm</string>
+    <string name="title_activity_add_web">Thêm Website</string>
+    <string name="title_activity_check_rank">Kiểm Tra</string>
+    <string name="yourrank">Hạng của bạn là</string>
+    <string name="please_wait">Vui lòng chờ</string>
+    <string name="progress_dialog">Đang lấy Thứ Hạng</string>
+</resources>
