@@ -229,17 +229,18 @@ public class CheckRank extends AppCompatActivity {
 
     @Override
     protected void onPause() {
-        if(dialog != null)
+        if (dialog != null)
             dialog.dismiss();
         super.onPause();
     }
 
     public void tuongTacGooglePlayService(Messenger messenger) {
-        String key = "your_key";
-        String cx = "your_cx";
+        String key = "AIzaSyCxI2VDCIjvuLgxzQXFScEhHFTq7pJdB9M";
+        String cx = "008035611591073618230:fuc5vjhtzki";
         String qry = autoTextView.getText().toString();// search key word
         if (qry.length() > 0) {
             try {
+                TLog.d(this, "ngon:"+qry);
                 HttpRequestInitializer httpRequestInitializer = new HttpRequestInitializer() {
                     @Override
                     public void initialize(HttpRequest request) throws IOException {
@@ -261,13 +262,14 @@ public class CheckRank extends AppCompatActivity {
                 Search results = list.execute();
                 List<Result> items = results.getItems();
                 Message message = Message.obtain();
-                if (items !=null && items.size() > 0) {
+                if (items != null && items.size() > 0) {
                     for (Result item : items) {
                         //Log.d("Response", item.toString());
                         ggseo.add(new Website(item.getDisplayLink(), item.getLink()));
                         if (item.getDisplayLink().contains(strWebRank) && rank == -1) {
                             rank = ggseo.size();
                         }
+                        TLog.d(this, item.getDisplayLink());
                     }
                     message.what = 111;
                 } else {
